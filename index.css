@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f5fc;
+}
+main{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+main .cont-uno , .cont-dos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .cont-dos{
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px gray;
+    width: 300px;
+    height: 500px;
+    background: #fff;
+}
+.cont-dos img{
+    width:250px;
+}
+.cont-dos .mostrar{
+   transform: translateY(-10px);
+    
+}
+.cont-dos span , p{
+    text-align: center;
+    max-width: 200px;
+    /*overflow-y: scroll;*/
+    
+}
+.cont-dos span{
+    font-size: 25px;
+    margin: 5px 0;
+    font-weight: 750;
+}
+.cont-dos p{
+    font-size: 15px;
+    margin: 5px 0;
+    color: rgb(51, 50, 50);
+}
+.cont-dos .copiar{
+    margin: 10px;
+    width: 200px;
+    height: 50px;
+    border: solid  #0a3871 2px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #0a3871;
+   position:absolute;
+   bottom: 15px;
+    
+}
+span{
+    display: inline-block;
+}
+ main .cont-uno{
+    width: 500px;
+    height: 500px;
+ }
+ .cont-uno textarea{
+    border: none;
+    width: 450px;
+    height: 400px;
+    background: none;
+    color:#0a3871;
+    font-size: 30px;
+    outline: none;
+    resize: none;
+ }
+ .cont-uno textarea::placeholder{
+    color: #0a3871;
+ }
+ .cont-uno textarea:focus{
+    border: none;
+ }
+ .cont-uno span{
+    color: rgb(88, 84, 84);
+ }
+ .cont-uno .restriccion{
+    margin: 0 160px 0 0;
+ }
+ .cont-uno .admira{
+    margin: 0 2px;
+    color: white;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius:50%;
+    background-color: rgb(105, 103, 103);
+ }
+
+ .cont-uno div button{
+     width: 210px;
+     height: 50px;
+     margin: 10px;
+     border-radius: 15px;
+     border: none;
+     cursor: pointer;
+ }
+ .cont-uno .btn1{
+    background-color: #0a3871 ;
+    color: white;
+    font-size: 15px;
+ }
+ .cont-uno .btn2{
+    color: #0a3871 ;
+    border:  #0a3871 solid 2px;
+    font-size: 15px;
+ }
+ .cont-dos .text-conten{
+   position: absolute;
+   height: 80%;
+   width: 100%;
+    text-align: start;
+    word-wrap: break-word;
+    color: rgb(88, 83, 83);
+   transform: translateY(-25px);
+   overflow-y: auto;
+ }
+
+ @media (max-width:860px){
+   main{
+      flex-direction: column;
+      
+   }
+   main .cont-uno{
+      width: 100%;
+      margin-top: 50px;
+      height:50%;
+   }
+   .cont-uno textarea{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+   }
+   main .cont-dos{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      margin-top: 20px;
+      margin-bottom:20px ;
+   }
+   .cont-dos img{
+      display: none;
+   }
+   .cont-dos span { 
+      max-width: 500px;
+      font-size: 17px;
+   }
+   .cont-dos p {
+      max-width: 500px;
+      font-size: 14px;
+   }
+   .cont-dos .text-conten{
+      padding: 10px 60px;
+      position: static;
+      font-size: 20px;
+      margin: 20px 0 0 0;
+   }
+   .cont-dos .copiar{
+     position: static;
+     width: 450px;
+     display: none;
+   }
+
+ }
+@media (max-width:480px){  
+   .cont-uno div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   }
+   .cont-uno .span{
+      display: inline;
+     
+    
+   }
+}
